@@ -71,8 +71,7 @@ public class main {
     }
 
     Endereco endereco = new Endereco(cep, logradouro, numeroLogradouro);
-    Cliente cliente = new Cliente(cpf, nome, endereco, telefones); // passa a lista de telefones para o construtor do
-                                                                   // Cliente
+    Cliente cliente = new Cliente(cpf, nome, endereco, telefones); 
     contas.add(new Conta("", "", 0.0, cliente));
     System.out.println("Cliente cadastrado com sucesso!");
   }
@@ -88,7 +87,7 @@ public class main {
           + cliente.getEndereco().getNumero());
       System.out.println("Número: " + cliente.getEndereco().getNumero());
 
-      List<Telefone> telefones = cliente.getTelefone(); // Corrigido para getTelefone()
+      List<Telefone> telefones = cliente.getTelefone(); 
 
       if (telefones != null && !telefones.isEmpty()) {
         System.out.println("Telefones:");
